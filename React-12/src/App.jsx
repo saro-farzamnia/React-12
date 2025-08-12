@@ -1,14 +1,17 @@
 import { BrowserRouter, Routes, Route } from "react-router"
 import HomePage from "./pages/HomePage"
+import AboutUs from "./pages/AboutUs"
+import Products from "./pages/Products"
 
 function App() {
 
   return (
     <>
-    <h1>App Page</h1>
       <BrowserRouter>
         <Routes>
           <Route path="/" element={<HomePage/>} />
+          <Route path="about-us" element={<AboutUs/>} />
+          <Route  path="products" element={<Products/>} />
         </Routes>
       </BrowserRouter>
     </>
